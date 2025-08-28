@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ASGARD PHARMA</title>
+    <meta name="description" content="Fabless Biologics & Vaccine Manufacturing" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Top notice / optional -->
+    <div class="notice">
+      <p><strong>Now onboarding specialty practices</strong> — join the early access program.</p>
+      <a class="notice__link" href="#contact">Request access</a>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header__inner">
+        <a class="brand" href="/">
+          <img src="img/logo.svg" alt="ASGARD PHARMA" class="brand__logo" />
+          <span class="brand__name">ASGARD PHARMA</span>
+        </a>
+
+        <!-- Mobile nav toggle (no JS) -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" />
+        <label class="nav-toggle__btn" for="nav-toggle" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </label>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#specialties">Specialties</a></li>
+            <li><a href="#features">Platform</a></li>
+            <li><a href="#proof">Outcomes</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="nav__cta">
+            <a class="btn btn--ghost" href="#demo">Book a demo</a>
+            <a class="btn btn--primary" href="#contact">Get started</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <h1>Fabless Biologics & Vaccine Manufacturing</h1>
+          <p class="lead">
+            Streamline intake, triage, and follow-up while elevating patient experience. Built for cardiology, oncology,
+            gastroenterology, and more.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contact">Request access</a>
+            <a class="btn btn--ghost" href="#features">Explore the platform</a>
+          </div>
+          <ul class="hero__badges">
+            <li>HIPAA-ready</li>
+            <li>Audit logging</li>
+            <li>EMR friendly</li>
+          </ul>
+        </div>
+        <div class="hero__media">
+          <img src="img/hero-illustration.png" alt="Illustration of AI-assisted specialty workflows" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialties grid -->
+    <section id="specialties" class="section section--alt reveal">
+      <div class="container">
+        <header class="section__head">
+          <h2>Built for specialty practices</h2>
+          <p>Pre-configured workflows you can tailor to your clinic.</p>
+        </header>
+
+        <div class="cards cards--grid-3">
+          <article class="card">
+            <div class="card__icon">💓</div>
+            <h3 class="card__title">Cardiology</h3>
+            <p class="card__text">Automated intake, e-triage, echo scheduling, and risk alerts.</p>
+            <a class="card__link" href="#contact">Learn more</a>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">🧬</div>
+            <h3 class="card__title">Oncology</h3>
+            <p class="card__text">Symptom tracking, prior-auth prep, and coordinated care plans.</p>
+            <a class="card__link" href="#contact">Learn more</a>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">🫀</div>
+            <h3 class="card__title">Vascular</h3>
+            <p class="card__text">Referral parsing, imaging reminders, and longitudinal follow-up.</p>
+            <a class="card__link" href="#contact">Learn more</a>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">🧠</div>
+            <h3 class="card__title">Neurology</h3>
+            <p class="card__text">Waitlist management, remote check-ins, and PRO collection.</p>
+            <a class="card__link" href="#contact">Learn more</a>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">🩺</div>
+            <h3 class="card__title">Gastroenterology</h3>
+            <p class="card__text">Procedure prep education and post-op monitoring flows.</p>
+            <a class="card__link" href="#contact">Learn more</a>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">👁️</div>
+            <h3 class="card__title">Ophthalmology</h3>
+            <p class="card__text">Imaging coordination, recall cycles, and adherence nudges.</p>
+            <a class="card__link" href="#contact">Learn more</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature highlights -->
+    <section id="features" class="section reveal">
+      <div class="container">
+        <header class="section__head">
+          <h2>The platform</h2>
+          <p>Everything you need to run efficient, patient-centered specialty care.</p>
+        </header>
+
+        <div class="features">
+          <div class="feature">
+            <h3>Smart intake & triage</h3>
+            <p>Capture structured histories, surface risks, and route to the right pathway automatically.</p>
+          </div>
+          <div class="feature">
+            <h3>Automations you control</h3>
+            <p>Templates for reminders, prep education, and post-visit follow-ups—fully editable.</p>
+          </div>
+          <div class="feature">
+            <h3>EMR-friendly records</h3>
+            <p>Export notes and summaries in formats your existing systems accept.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outcomes / proof -->
+    <section id="proof" class="section section--alt reveal">
+      <div class="container proof">
+        <div class="proof__stat">
+          <div class="stat__value">-32%</div>
+          <div class="stat__label">no-show rate</div>
+        </div>
+        <div class="proof__stat">
+          <div class="stat__value">+18%</div>
+          <div class="stat__label">throughput</div>
+        </div>
+        <div class="proof__stat">
+          <div class="stat__value">95%</div>
+          <div class="stat__label">patient satisfaction</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="demo" class="cta reveal">
+      <div class="container cta__inner">
+        <h2>See it in action</h2>
+        <p>Get a personalized walkthrough for your specialty.</p>
+        <a class="btn btn--primary btn--lg" href="#contact">Book a demo</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer reveal">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <img src="img/logo.svg" alt="" class="brand__logo brand__logo--sm" />
+          <p>Operational excellence for specialty care.</p>
+        </div>
+        <nav class="footer__nav">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Platform</a></li>
+            <li><a href="#specialties">Specialties</a></li>
+            <li><a href="#proof">Outcomes</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+        </nav>
+        <div class="footer__cta">
+          <h4>Stay in the loop</h4>
+          <form class="form" action="#" method="post">
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" type="email" placeholder="you@clinic.com" required />
+            <button class="btn btn--primary" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="container footer__legal">
+        <p>© <span id="year"></span> Your Health AI. All rights reserved.</p>
+        <ul class="legal__links">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Accessibility</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
