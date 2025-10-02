@@ -31,16 +31,6 @@
   </head>
 
   <body>
-    <!-- Top notice / optional -->
-    <div class="notice">
-      <p><strong>Now onboarding specialty practices</strong> — join the early access program.</p>
-      <a
-        class="notice__link"
-        href="#contact"
-        >Request access</a
-      >
-    </div>
-
     <!-- Header -->
     <header class="site-header">
       <div class="container header__inner">
@@ -53,7 +43,7 @@
             alt="ASGARD PHARMA"
             class="brand__logo"
           />
-          <span class="brand__name">ASGARD PHARMA</span>
+          <!-- <span class="brand__name">ASGARD PHARMA</span> -->
         </a>
 
         <!-- Mobile nav toggle (no JS) -->
@@ -73,12 +63,12 @@
 
         <nav class="nav">
           <ul class="nav__list">
-            <li><a href="#specialties">Specialties</a></li>
-            <li><a href="#features">Platform</a></li>
-            <li><a href="#proof">Outcomes</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#mission">Company Overview</a></li>
+            <li><a href="#problemsAndSolution">Solving the Problem</a></li>
+            <li><a href="#competitiveAdvantage">Competitive Advantage</a></li>
+            <li><a href="#contactUs">Contact Us</a></li>
           </ul>
-          <div class="nav__cta">
+          <!-- <div class="nav__cta">
             <a
               class="btn btn--ghost"
               href="#demo"
@@ -89,7 +79,7 @@
               href="#contact"
               >Get started</a
             >
-          </div>
+          </div> -->
         </nav>
       </div>
     </header>
@@ -103,7 +93,7 @@
             Produce <span class="highlight">affordable</span> pharmaceuticals through licensing global innovations and
             utilizing Canadian biomanufacturing infrastructure.
           </p>
-          <div class="hero__actions">
+          <!-- <div class="hero__actions">
             <a
               class="btn btn--primary"
               href="#contact"
@@ -114,7 +104,7 @@
               href="#features"
               >Explore the platform</a
             >
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -128,11 +118,6 @@
         <header class="section__head">
           <h2>About Us</h2>
           <p class="mission__text">
-            Since 2024, Asgard Pharmaceuticals is a Canadian venture focused on licensing innovative vaccines and
-            biologic therapeutics developed abroad, and bringing them to market in Canada. Our mission is to delivery
-            affordable vaccines and biologics to Canadians by leveraging domestic manufacturing capabilities and AI
-            systems.
-            <br /><br />
             We aim to challenge the dominance of foreign multinationals and "Big Pharma" by reducing the burden of high
             cost vaccines on the taxpayer. The COVID-19 pandemic highlighted the decades-long decline in Canada's
             domestic biopharmaceutical capacity, creating a critical need to rebuild our national self-sufficiency in
@@ -144,7 +129,7 @@
 
         <div class="cards cards--grid-2">
           <article class="card">
-            <h3 class="card__title">💰 Affordability</h3>
+            <h3 class="card__title">Affordability</h3>
             <p class="card__text">
               We aim to challenge the dominance of US
               <span class="highlight">"Big Pharma"</span>
@@ -154,7 +139,7 @@
           </article>
 
           <article class="card">
-            <h3 class="card__title">🎯 Our vision</h3>
+            <h3 class="card__title">Our vision</h3>
             <p class="card__text">
               Become Canada's first agile, cost-efficient bridge for licensing, developing, and commercializing
               innovative foreign intellectual property in large molecule pharmaceuticals.
@@ -167,60 +152,62 @@
     <!-- History -->
     <section
       id="history"
-      class="section section--alt reveal"
+      class="section section--alt reveal histy-section"
     >
-      <header class="section__head">
-        <h2>History</h2>
-        <p>Canada was <strong class="highlight">once a leader</strong> in public vaccine manufacturing</p>
-      </header>
-      <div class="container history">
-        <!-- Left: Text -->
-        <div class="history__content">
-          <ul class="history__points">
-            <li>
-              <span class="bullet">➤</span>
-              In 1914, Connaught Labs produced antitoxins as a
-              <strong class="highlight">public, not-for-profit institute</strong>
-              tied to the University of Toronto
-            </li>
-            <li>
-              <span class="bullet">➤</span>
-              But by the 1990s,
-              <strong class="highlight">privatization and foreign acquisitions</strong>
-              (Connaught → Sanofi, Armand Frappier → GSK) dismantled our domestic capacity, leaving Canada
-              <strong class="highlight">exposed</strong>
-              during COVID 19
-            </li>
-            <li>
-              <span class="bullet">➤</span>
-              In response, the federal government invested $1.2B in the Biologics Manufacturing Centre (BMC) — which
-              today
-              <strong class="highlight">exposed</strong>
-              , with only one confirmed partner
-            </li>
-          </ul>
-        </div>
+      <div class="container">
+        <header class="section__head">
+          <h2>History</h2>
+          <p>Canada was <strong class="highlight">once a leader</strong> in public vaccine manufacturing</p>
+        </header>
+        <div class="history">
+          <!-- Left: Text -->
+          <div class="history__content">
+            <ul class="history__points">
+              <li>
+                <span class="bullet">➤</span>
+                In 1914, Connaught Labs produced antitoxins as a
+                <strong class="highlight">public, not-for-profit institute</strong>
+                tied to the University of Toronto
+              </li>
+              <li>
+                <span class="bullet">➤</span>
+                But by the 1990s,
+                <strong class="highlight">privatization and foreign acquisitions</strong>
+                (Connaught → Sanofi, Armand Frappier → GSK) dismantled our domestic capacity, leaving Canada
+                <strong class="highlight">exposed</strong>
+                during COVID 19
+              </li>
+              <li>
+                <span class="bullet">➤</span>
+                In response, the federal government invested $1.2B in the Biologics Manufacturing Centre (BMC) — which
+                today
+                <strong class="highlight">exposed</strong>
+                , with only one confirmed partner
+              </li>
+            </ul>
+          </div>
 
-        <!-- Right: Images -->
-        <div class="history__gallery">
-          <div class="history__grid">
-            <img
-              src="img/history/history1.png"
-              alt="History 1"
-            />
+          <!-- Right: Images -->
+          <div class="history__gallery">
+            <div class="history__grid">
+              <img
+                src="img/history/history1.png"
+                alt="History 1"
+              />
 
-            <img
-              src="img/history/history3.png"
-              alt="History 3"
-            />
-            <img
-              src="img/history/history4.png"
-              alt="History 4"
-            />
-            <img
-              src="img/history/history2.png"
-              alt="History 2"
-            />
+              <img
+                src="img/history/history3.png"
+                alt="History 3"
+              />
+              <img
+                src="img/history/history4.png"
+                alt="History 4"
+              />
+              <img
+                src="img/history/history2.png"
+                alt="History 2"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -228,7 +215,7 @@
 
     <!-- Problems highlights -->
     <section
-      id="problems"
+      id="problemsAndSolution"
       class="section section--alt reveal"
     >
       <div class="container">
@@ -238,68 +225,164 @@
         </header>
 
         <div class="featuresFour">
-          <div class="featureProblem">
-            <h3>Cost</h3>
-            <p>
-              Even with public and private coverage, patients still pay high out-of-pocket costs—while taxpayers foot
-              inflated bills driven by pharma pricing power.
-            </p>
+          <div class="flip-card featureProblem">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <!-- Front content here -->
+                <h3>Cost</h3>
+              </div>
+              <div class="flip-card-back">
+                <!-- Back content here -->
+                <p>
+                  Even with public and private coverage, patients still pay high out-of-pocket costs—while taxpayers
+                  foot inflated bills driven by pharma pricing power.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="featureProblem">
-            <h3>Fragile Health Sovereignty</h3>
-            <p>Canada relies on foreign pharma giants, with little control over supply, pricing, or production.</p>
+
+          <div class="flip-card featureProblem">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <!-- Front content here -->
+                <h3>Fragile Health Sovereignty</h3>
+              </div>
+              <div class="flip-card-back">
+                <!-- Back content here -->
+                <p>Canada relies on foreign pharma giants, with little control over supply, pricing, or production.</p>
+              </div>
+            </div>
           </div>
-          <div class="featureProblem">
-            <h3>Vulnerable Supply Chains</h3>
-            <p>
-              Pandemics and geopolitics have exposed our inability to produce critical medicines when it matters most.
-            </p>
+
+          <div class="flip-card featureProblem">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <!-- Front content here -->
+                <h3>Vulnerable Supply Chains</h3>
+              </div>
+              <div class="flip-card-back">
+                <!-- Back content here -->
+                <p>
+                  Pandemics and geopolitics have exposed our inability to produce critical medicines when it matters
+                  most.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="featureProblem">
-            <h3>Innovation Bottleneck</h3>
-            <p>
-              Cutting-edge therapies abroad are delayed or unavailable in Canada due to lack of domestic licensing and
-              trial pathways.
-            </p>
+
+          <div class="flip-card featureProblem">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <!-- Front content here -->
+                <h3>Innovation Bottleneck</h3>
+              </div>
+              <div class="flip-card-back">
+                <!-- Back content here -->
+                <p>
+                  Cutting-edge therapies abroad are delayed or unavailable in Canada due to lack of domestic licensing
+                  and trial pathways.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <br />
+
+        <header class="section__head">
+          <h2>Solution</h2>
+          <p>Deploy domestic idle capacity to rejuvinate the Canadian biotech sector.</p>
+        </header>
+
+        <div class="featuresFour">
+          <div class="flip-card featureSolution">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <!-- Front content here -->
+                <h3>Rebuild Domestic Biotech</h3>
+              </div>
+              <div class="flip-card-back">
+                <!-- Back content here -->
+                <p>
+                  License late-phase global innovations and invest in Canadian-led development and commercialization,
+                  building a resilient domestic pipeline.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card featureSolution">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <!-- Front content here -->
+                <h3>Deploy Idle Capacity</h3>
+              </div>
+              <div class="flip-card-back">
+                <!-- Back content here -->
+                <p>Facilities like the Biologics Manufacturing Centre (BMC) represent untapped national capacity.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card featureSolution">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <!-- Front content here -->
+                <h3>Slash Patient & Public Costs</h3>
+              </div>
+              <div class="flip-card-back">
+                <!-- Back content here -->
+                <p>
+                  Avoid traditional R&D overhead and global distribution markups to offer affordable, locally made
+                  biologics for both patients and healthcare systems.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card featureSolution">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <!-- Front content here -->
+                <h3>Eliminate Price Gouging</h3>
+              </div>
+              <div class="flip-card-back">
+                <!-- Back content here -->
+                <p>
+                  Minimizing cost allows minimizing excessive markups to patients while still offering high-quality
+                  medicines.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Solution highlights -->
+    <!-- Core Values -->
     <section
-      id="solutions"
-      class="section section--alt reveal"
+      id="core-values"
+      class="section section--alt reveal core-values"
     >
-      <div class="container">
-        <header class="section__head">
-          <h2>Solution</h2>
-        </header>
+      <div class="container core-values__inner">
+        <div class="proof__stat">
+          <div class="stat__value">Core Values</div>
+          <div class="stat__label">
+            deliberately rejecting the gatekeeping of life-saving therapies seen in traditional pharma.
+          </div>
+        </div>
 
-        <div class="featuresFour">
-          <div class="featureSolution">
-            <h3>Rebuild Domestic Biotech</h3>
+        <div>
+          <div>
             <p>
-              License late-phase global innovations and invest in Canadian-led development and commercialization,
-              building a resilient domestic pipeline.
+              If drug development is supported by taxpayer dollars, then the
+              <span class="highlight">public deserves access</span> to its rewards—not just private shareholders.
             </p>
-          </div>
-          <div class="featureSolution">
-            <h3>Deploy Idle Capacity</h3>
-            <p>Facilities like the Biologics Manufacturing Centre (BMC) represent untapped national capacity.</p>
-          </div>
-          <div class="featureSolution">
-            <h3>Slash Patient & Public Costs</h3>
+            <p>We believe that <span class="highlight">public funding should yield public returns.</span></p>
             <p>
-              Avoid traditional R&D overhead and global distribution markups to offer affordable, locally made biologics
-              for both patients and healthcare systems.
-            </p>
-          </div>
-          <div class="featureSolution">
-            <h3>Eliminate Price Gouging</h3>
-            <p>
-              Minimizing cost allows minimizing excessive markups to patients while still offering high-quality
-              medicines.
+              We believe in a resilient, self-sufficient Canadian pharmaceutical system,
+              <span class="highlight">free of foreign interference</span>, ready for pandemics and supply chain shocks.
             </p>
           </div>
         </div>
@@ -308,26 +391,42 @@
 
     <!-- Outcomes / proof -->
     <section
-      id="proof"
-      class="section section--alt reveal"
+      id="competitiveAdvantage"
+      class="section cta section--alt reveal"
     >
-      <div class="container proof">
-        <div class="proof__stat">
-          <div class="stat__value">-32%</div>
-          <div class="stat__label">no-show rate</div>
-        </div>
-        <div class="proof__stat">
-          <div class="stat__value">+18%</div>
-          <div class="stat__label">throughput</div>
-        </div>
-        <div class="proof__stat">
-          <div class="stat__value">95%</div>
-          <div class="stat__label">patient satisfaction</div>
+      <div class="container">
+        <header class="section__head">
+          <h2>Competitive Advantage</h2>
+        </header>
+        <div class="history__content">
+          <ul class="history__points">
+            <li>
+              <span class="bullet">➤</span>
+              Lean, de-risked entry via licensing by avoiding lengthy in-house R&D.
+            </li>
+            <li>
+              <span class="bullet">➤</span>
+              Leveraging existing public infrastructure and policy priorities.
+            </li>
+            <li>
+              <span class="bullet">➤</span>
+              Maintaining independence from U.S. multinationals to increase alignment with Canadian healthcare goals and
+              ensure cost efficiency is met at the procurment stage and through long-term disease prevention.
+            </li>
+            <li>
+              <span class="bullet">➤</span>
+              Access to both global innovation and Canadian credibility.
+            </li>
+            <li>
+              <span class="bullet">➤</span>
+              Focus on patient longevity and quality of life.
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- CTA -->
+    <!-- CTA
     <section
       id="demo"
       class="cta reveal"
@@ -341,11 +440,14 @@
           >Book a demo</a
         >
       </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
-    <footer class="site-footer reveal">
-      <div class="container footer__grid">
+    <footer
+      id="contactUs"
+      class="site-footer reveal"
+    >
+      <!-- <div class="container footer__grid">
         <div class="footer__brand">
           <img
             src="img/logo.svg"
@@ -396,14 +498,19 @@
             </button>
           </form>
         </div>
-      </div>
+      </div> -->
+      
+      
       <div class="container footer__legal">
         <p>© <span id="year"></span> ASGARD PHARMA. All rights reserved.</p>
-        <ul class="legal__links">
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Accessibility</a></li>
-        </ul>
+        <div class="footer__contact">
+          <h4>Asgard Pharmaceuticals Inc.</h4>
+          <p>
+            West Vancouver, BC, Canada<br />
+            <a href="mailto:info@asgardpharma.com">info@asgardpharma.ca</a><br />
+            <a href="tel:+11234567890">+1 (778) 928-6674</a><br />
+          </p>
+        </div>
       </div>
     </footer>
 

@@ -10,7 +10,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.1 }
+  { threshold: 0.2 }
 );
 
 reveals.forEach((el) => observer.observe(el));
@@ -20,3 +20,17 @@ const yearEl = document.getElementById("year");
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
+
+document.querySelectorAll('.flip-card').forEach(card => {
+  // Add wiggle-hint on load
+  card.classList.add('wiggle-hint');
+
+  // Remove wiggle-hint when card is flipped
+  card.addEventListener('mouseenter', function () {
+    card.classList.remove('wiggle-hint');
+    card.classList.add('flipped');
+  });
+  card.addEventListener('mouseleave', function () {
+    card.classList.remove('flipped');
+  });
+});
