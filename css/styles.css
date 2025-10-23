@@ -831,37 +831,46 @@ img {
   transform: rotateY(180deg);
 }
 
-/* Wiggle animation */
-@keyframes wiggle {
-  0%,
+/* Hint flip animation (triggered when section is in view) */
+@keyframes hintFlip {
+  0% {
+    transform: rotateY(0);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
   100% {
-    transform: rotateZ(0deg);
-  }
-  15% {
-    transform: rotateZ(-4deg);
-  }
-  30% {
-    transform: rotateZ(4deg);
-  }
-  45% {
-    transform: rotateZ(-3deg);
-  }
-  60% {
-    transform: rotateZ(3deg);
-  }
-  75% {
-    transform: rotateZ(-2deg);
-  }
-  90% {
-    transform: rotateZ(2deg);
+    transform: rotateY(0);
   }
 }
 
-.wiggle-hint {
-  animation: wiggle 1.2s ease-in-out 1.5s 1;
+/* Make the flip originate from the left (left→right hint) */
+#problemsAndSolution.hint-flip .flip-card {
+  transform-origin: left center;
 }
 
-/* Hint animation on card (not flipped) */
-.flip-card:not(.flipped) {
-  animation: wiggle 1.2s ease-in-out 1.5s 2;
+/* Default animation styles — delay is applied inline in JS for staggering */
+#problemsAndSolution.hint-flip .flip-card .flip-card-inner {
+  animation-name: hintFlip;
+  animation-duration: 3700ms;
+  /* avoid leaving the element in an animated state that can override .flipped */
+  animation-fill-mode: none;              /* changed from 'forwards' */
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* animation-delay will be set per-card from JS for the stagger effect */
+}
+
+/* Clean up inline animation after it finishes so hover flipping still works */
+#problemsAndSolution.hint-flip .flip-card .flip-card-inner[style] {
+  /* nothing required here; JS will remove inline style after animationend */
+}
+
+/* Smooth native scrolling for browsers that support it */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure anchored sections aren't hidden behind the sticky header */
+.section {
+  /* adjust this if your header height changes on small screens */
+  scroll-margin-top: 92px;
 }
