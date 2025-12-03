@@ -394,7 +394,7 @@ img {
 /* ====== Footer ====== */
 /* ==================== */
 .site-footer {
-  background: url("../img/footer.png") no-repeat center center;
+  background: url("../img/footer.jpg") no-repeat center center;
   background-size: cover;
   filter: grayscale(1);
   padding: 400px 0 20px;
